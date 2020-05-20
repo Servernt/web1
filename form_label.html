@@ -1,0 +1,38 @@
+<html>
+<body>
+	<form action="">
+		<p>
+			<label for="id_txt"> 
+				ID : 
+				<input id="id_txt" type="text" name="id" value="id를 입력하세요">
+			</label>
+		</p>
+		<p>
+			<label for="id_pwd"> 
+				PASSWORD : 
+				<input id="id_pwd" type="password" name="pwd" value="비밀번호를 입력하세요">
+			</label>
+		</p>
+		<p>
+			<label for="id_txta">
+				메모 : 
+				<textarea id="id_txta" name="note" cols="30" rows="3">
+					메모사항을 입력하세요		
+				</textarea>
+			</label>
+		</p>
+		<p>
+			<!-- label을 활용하는 방법 2가지 -->
+			<!-- label은 control들을 그룹화 하여 해당하는 하나의 control을 클릭해서 focus 되게 한다. -->
+			<label for="id_chkbox1">
+				<input id="id_chkbox1" type="checkbox" value="red"> 
+				붉은색
+			</label>
+			<label>
+				<input type="checkbox" value="blue">
+				파란색
+			</label>
+		</p>
+	</form>
+</body>
+</html>

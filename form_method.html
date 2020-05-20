@@ -1,0 +1,23 @@
+<html>
+<body>
+	<form action="http://localhost/method.php">
+		<!-- 데이터 전송 방식 : get/post -->
+		<!-- get : url에 표기하여 전송 (default)-->
+		<!-- http://localhost/method.php?id=111&pwd=123213 -->
+		
+		<input type="text" name="id">
+		<input type="password" name="pwd">
+		<input type="submit">
+		
+	</form>
+	
+	<form action="http://localhost/method.php" method="post">
+		<!-- 데이터 전송 방식 : get/post -->		
+		<!-- post : url에 표기하지 않고 전송(hide) -->		
+		<!-- http://localhost/method.php -->
+		<input type="text" name="id1">
+		<input type="password" name="pwd1"><input type="submit">
+		
+	</form>
+</body>
+</html>

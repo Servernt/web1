@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="http://localhost/order.php">
+		<!-- radio 버튼은 같은 name 쓰는 것들과 그룹화 되며 그룹 중에 1개만 선택이 된다 -->
+		<p>
+			<h1>색상 (단일선택)</h1>		
+			붉은색 <input type="radio" name="color" value="red">
+			검은색 <input type="radio" name="color" value="black" checked>
+			파란색 <input type="radio" name="color" value="blue">
+		</p>
+		
+		<!-- checkbox 버튼은 같은 그룹화 시킨 내용을 다중 선택이 가능하다. checked는 기본 선택 -->
+		<p>
+			<h1>사이즈 (다중선택)</h1>		
+			95 : <input type="checkbox" name="size" value="95">
+			100 : <input type="checkbox" name="size" value="100" checked>
+			105 : <input type="checkbox" name="size" value="105" checked>
+		</p>				
+		<input type="submit">
+		<!-- http://localhost/order.php?color=black&size=100&size=105 -->
+	</form>
+	
+</body>
+</html>
